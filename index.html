@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shazwan's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+</head>
+<body>
+
+    <section class="desktop-content">
+        <img class="my-img slide-in-elliptic-left-bck" src="./asset/me.png" alt="">
+        <img id="qr" class="text-flicker-in-glow" src="./asset/qr.png" alt="">
+        <div id="hero">
+            <h1 class="focus-in-expand">The UI is tailored for mobile usage.</h1>
+            <h2 class="focus-in-expand">~ Shazwan</h2>
+        </div>
+        <div class="parallelogram focus-in-expand"></div>
+    </section>
+
+    <section class="mobile-content">
+        <div id="side-button" class="mobile-content">
+            <button class="jello-horizontal" onclick="scrollToSection(1)">
+                <img id="kivy-icon" src="./asset/icon/kivy.svg" alt="">
+            </button>
+            <button class="jello-horizontal" onclick="scrollToSection(2)">
+                <img id="blender-icon" src="./asset/icon/blender.svg" alt="">
+            </button>
+            <button class="jello-horizontal" onclick="scrollToSection(3)">
+                <img id="drawing-icon" src="./asset/icon/drawing.svg" alt="">
+            </button>
+        </div>
+    
+        <div class="page-title">
+            <h1 style="margin: 0;">Software</h1>
+            <h1 style="margin: 0; transform: translateX(50%);">Engineer</h1>
+        </div>
+        <img class="my-img slide-in-elliptic-left-bck" src="./asset/me.png" alt="">
+        <h2 id="shazwan">Shazwan</h2>
+        <div id="socmed" class="focus-in-expand">
+            <button class="roll-in-blurred-top" onclick="onclick=redirectTo('mailto:shazwanx9@gmail.com')"><img src="./asset/icon/gmail.svg" alt=""></button>
+            <button class="roll-in-blurred-top" onclick="onclick=redirectTo('https://www.youtube.com/@ShazwanX-99')"><img src="./asset/icon/youtube.svg" alt=""></button>
+            <button class="roll-in-blurred-top" onclick="onclick=redirectTo('https://github.com/Shazwanx9')"><img src="./asset/icon/github.svg" alt=""></button>
+            <button class="roll-in-blurred-top" onclick="onclick=redirectTo('https://www.linkedin.com/in/ShazwanSharum')"><img src="./asset/icon/linkedin.svg" alt=""></button>
+        </div>
+        <div class="parallelogram focus-in-expand"></div>
+    </section>
+
+    <section class="mobile-content">
+        <div class="video-container">
+            <video id="kivy-video" loop muted playsinline>
+              <source src="./asset/kivyapp/area calculator.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="overlay"></div>
+        <div class="page-title">
+            <h1 style="margin: 0;">Kivy</h1>
+            <h1 style="margin: 0; margin-top: -80px; transform: translateX(15%); color: var(--accent-color);">Application</h1>
+        </div>
+        <div id="kivy-image-list" class="image-list">
+            <img src="./asset/kivyapp/area calculator.png" data-video="./asset/kivyapp/area calculator.mp4" alt="Image 1">
+            <img src="./asset/kivyapp/leap year.png" data-video="./asset/kivyapp/leap year.mp4" alt="Image 2">
+            <img src="./asset/kivyapp/fortune cookie.png" data-video="./asset/kivyapp/fortune cookie.mp4" alt="Image 2">
+            <img src="./asset/kivyapp/minesweeper.png" data-video="./asset/kivyapp/minesweeper.mp4" alt="Image 2">
+            <img src="./asset/kivyapp/rima.png" data-video="./asset/kivyapp/rima.mp4" alt="Image 2">
+        </div>
+    </section>
+
+    <section class="mobile-content">
+        <div class="video-container">
+            <video id="blender-video" loop muted playsinline>
+              <source src="./asset/blender/cube.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="overlay"></div>
+        <div class="page-title">
+            <h1 style="margin: 0;">Blender</h1>
+            <h1 style="margin: 0; margin-top: -80px; transform: translateX(15%); color: var(--accent-color);">Rendering</h1>
+        </div>
+        <div id="blender-image-list" class="image-list">
+            <img src="./asset/blender/elements.png" data-video="./asset/blender/elements.mp4" alt="Image 2">
+            <img src="./asset/blender/teapot.png" data-video="./asset/blender/teapot.mp4" alt="Image 2">
+            <img src="./asset/blender/dice.gif" data-video="./asset/blender/dice.mp4" alt="Image 2" style="background-color: var(--main-color);">
+            <img src="./asset/blender/cube.png" data-video="./asset/blender/cube.mp4" alt="Image 1">
+            <img src="./asset/blender/toaster.png" data-video="./asset/blender/toaster.mp4" alt="Image 2">
+            <img src="./asset/blender/ring.png" data-video="./asset/blender/ring.mp4" alt="Image 2">
+        </div>
+    </section>
+
+    <section class="mobile-content">
+        <div class="page-title">
+            <h1 style="margin: 0;">Visual</h1>
+            <h1 style="margin: 0; margin-top: -80px; transform: translateX(15%); color: var(--accent-color);">Aesthetics</h1>
+        </div>
+
+        <div id="first-gallery" class="wrapper">
+            <div id="gallery1" class="gallery">
+                <img src="./asset/pixel/alien.gif" alt="">
+                <img src="./asset/pixel/blob.gif" alt="">
+                <img src="./asset/pixel/coin.gif" alt="">
+                <img src="./asset/pixel/girl.gif" alt="">
+                <img src="./asset/pixel/jar.gif" alt="">
+                <img src="./asset/pixel/shapes.gif" alt="">
+                <!-- <img src="./asset/pixel/slime.gif" alt=""> -->
+            </div>
+        </div>
+
+        <div id="second-gallery" class="wrapper">
+            <div id="gallery2" class="gallery">
+                <img src="./asset/blender/crates&barrel.png" alt="">
+                <img src="./asset/figma/404-page.png" alt="">
+                <img src="./asset/figma/FlashMessages.png" alt="">
+                <img src="./asset/blender/snowglobe.png" alt="">
+                <img src="./asset/figma/MusicPlayer.png" alt="">
+                <img src="./asset/figma/SocialShare.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
