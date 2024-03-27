@@ -24,6 +24,8 @@ body {
 
 section {
     position: relative;
+    height: 100dvh;
+    min-height: 100dvh;
 }
 
 h1 {
@@ -148,6 +150,8 @@ button img {
     justify-content: center;
     align-items: center;
     width: 100vw;
+    height: 100dvh;
+    min-height: 100dvh;;
     overflow: hidden;
 }
 
