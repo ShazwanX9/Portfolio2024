@@ -70,16 +70,17 @@ function toDoEverytime() {
     toggleContent();
     animateSkew();
     setupDefaultTextsize();
+    setDynamicHeight();
 }
 
 function setupImagesSelection() {
     const kivyImages = document.querySelectorAll('#kivy-image-list img');
     var kivyVideo = document.getElementById('kivy-video');
-    kivyImages.forEach(image => {imageTriggerVideo(kivyVideo, image, kivyImages)});
+    kivyImages.forEach(image => { imageTriggerVideo(kivyVideo, image, kivyImages) });
 
     const blenderImages = document.querySelectorAll('#blender-image-list img');
     var blenderVideo = document.getElementById('blender-video');
-    blenderImages.forEach(image => {imageTriggerVideo(blenderVideo, image, blenderImages)});
+    blenderImages.forEach(image => { imageTriggerVideo(blenderVideo, image, blenderImages) });
 
     kivyVideo.pause();
     blenderVideo.pause();
@@ -88,6 +89,17 @@ function setupImagesSelection() {
 function setupGallery() {
     document.getElementById('gallery1').style.setProperty('--s', '100px');
     document.getElementById('gallery2').style.setProperty('--s', '150px');
+}
+
+// Function to calculate and set the height of the dynamic element
+function setDynamicHeight() {
+    const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+    const availableHeight = vh;
+
+    const elements = document.querySelectorAll('section, .video-container');
+    elements.forEach(element => {
+        element.style.height = `${availableHeight}px`;
+    });
 }
 
 // Function to toggle content based on window size
