@@ -24,8 +24,8 @@ body {
 
 section {
     position: relative;
-    min-height: 100vh;
-    height: 100vh
+    min-height: -webkit-fill-available;
+    height: 100dvh
 }
 
 h1 {
@@ -48,7 +48,7 @@ h2 {
 .parallelogram {
     position: absolute;
     width: 100vw;
-    height: 15vh;
+    height: 15%;
     background-color: var(--accent-color);
     transform: skewX(-75deg);
     margin-left: -20vw;
@@ -150,7 +150,8 @@ button img {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
+    min-height: -webkit-fill-available;
     overflow: hidden;
 }
 
